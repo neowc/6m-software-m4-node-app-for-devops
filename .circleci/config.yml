@@ -28,8 +28,8 @@ jobs:
     docker:
       - image: cimg/node:16.10
         auth:
-            username: $PARAM_DOCKER_USERNAME
-            password: $PARAM_DOCKER_PASSWORD
+            username: $DOCKER_LOGIN
+            password: $DOCKER_PASSWORD
     steps:
       - setup_remote_docker
       - checkout
