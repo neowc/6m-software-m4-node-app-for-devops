@@ -61,13 +61,13 @@ workflows:
       - build
           filters:
               branches:
-                only: develop
+                only: main
       - test:
           requires:
             - build
           filters:
               branches:
-                only: develop
+                only: main
       - build-and-push:
           requires:
             - test
